@@ -22,8 +22,8 @@ function App() {
       .then((sortedData) => setData(sortedData));
   }, [])
 
+  //callback function after clicking a repo card
   const getCommitData = (data) => {
-    // console.log("HERE: ",data)
     setCommitData(data)
   }
 
@@ -44,18 +44,7 @@ function App() {
 
           <Switch>
             <Route path="/commits">
-              {/* <div>
-                {commitData.map((commit) => (
-                  <div className="card">
-                    <div>Author: {commit.author.login}</div>
-                    <div>Message / Title: {commit.commit.message}</div>
-                    <div>Hash: {commit.sha}</div>
-                    <div>Date: {commit.commit.committer.date}</div>
-                    <br />
-                  </div>
-                ))}
-              </div> */}
-              <CommitCard commitData={commitData}/>
+              <CommitCard commitData={commitData} />
             </Route>
             <Route path="/">
               {

@@ -13,11 +13,6 @@ const RepoCard = ({
 }) => {
   let history = useHistory();
 
-  const returnRecentThreeCommits = (data) => {
-    data.slice(0, 4);
-    data.map((commit) => <div>{commit.author.login}</div>);
-  };
-
   const handleClick = (e) => {
     fetch(
       `https://api.github.com/repos/Netflix/${name}/commits?per_page=1/master`

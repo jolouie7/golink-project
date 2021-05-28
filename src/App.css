@@ -9,3 +9,7 @@
   border: 1px solid black;
   cursor: pointer;
 }
+
+.card:hover {
+  background: lightblue;
+}
