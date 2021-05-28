@@ -1,71 +1,52 @@
-# Getting Started with Create React App
+# GoLink Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Time spent: 2hour 30minutes
 
-## Available Scripts
+I got to this project very late and was worried I would not be able to submit it. I couldn't code for a couple of days due to getting my covid vaccine. In hind sight I should have managed all my take home projects better.
 
-In the project directory, you can run:
+### Installation
 
-### `yarn start`
+#### Clone project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone git@github.com:jolouie7/golink-project.git
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Change in the directory
+```
+cd golink-project
+```
 
-### `yarn test`
+#### open in your code editor
+```
+code .
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### install dependencies
+```
+npm install
+```
 
-### `yarn build`
+#### run
+```
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+technologies used:
+- Reactjs
+- React Router
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Improvements
+- [ ] Add tests
+  - I normally like to add integration tests to make sure everything is work correctly. I also don't want to keep manaually testing my app.
+- [ ] Improve styling
+  - I have little to no styling. I was thinking of using react bootstrap but I didn't want to import it just to style my cards
+- [ ] Add infinite scroll or pagination
+  - I was originally going to add infinite scroll but the API only returns 30 entries.
+- [ ] Add better accessibility
+  - In my cards I list everything using a div, which isn't good for search engines / scrapers
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Bonus:
+- For the bonus I would have a input field so the user can type in the org they want with a little bit of validation. I would store what they typed in state so I can reference it in my app. I would use template strings instead of hardcoding Netflix in my fetch requests.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# golink-project
+Closing thoughts: I enjoyed the project. This is one of the very few cases where I was given an API to work with. I liked how I had to go and read the Github API docs in order to get the commits I want. Googling also helped a lot too.
