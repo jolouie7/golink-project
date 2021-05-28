@@ -13,8 +13,10 @@ const RepoCard = ({
 }) => {
   let history = useHistory();
 
+  //After clicking on a repo card, it should load the 3 most recent commits
   const handleClick = (e) => {
     fetch(
+      //this will return more then 1 commit log
       `https://api.github.com/repos/Netflix/${name}/commits?per_page=1/master`
     )
       .then((response) => response.json())
