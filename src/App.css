@@ -7,4 +7,5 @@
 .card {
   max-width: 50rem;
   border: 1px solid black;
+  cursor: pointer;
 }
